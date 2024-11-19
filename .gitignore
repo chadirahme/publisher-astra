@@ -5,6 +5,7 @@ target/
 !**/src/test/**/target/
 
 /src/main/resources/data.txt
+/src/main/resources/secure-connect-db-publisher.zip
 ### STS ###
 .apt_generated
 .classpath
