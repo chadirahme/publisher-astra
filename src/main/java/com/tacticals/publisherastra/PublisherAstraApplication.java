@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.cassandra.repository.config.EnableCassandraRepositories;
 
 @SpringBootApplication
-@EnableCassandraRepositories(basePackages = "com.tacticals.publisherastra.repository")
+//@EnableCassandraRepositories(basePackages = "com.tacticals.publisherastra.repository")
 public class PublisherAstraApplication {
 
 	public static void main(String[] args) {

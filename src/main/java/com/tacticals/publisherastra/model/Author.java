@@ -18,9 +18,9 @@ public class Author {
     @CassandraType(type = CassandraType.Name.TEXT)
     private String name;
 
-    @Column("author_address")
+    @Column("personal_name")
     @CassandraType(type = CassandraType.Name.TEXT)
-    private String address;
+    private String personalName;
 
     public String getId() {
         return id;
@@ -37,11 +37,10 @@ public class Author {
     public void setName(String name) {
         this.name = name;
     }
-
-    public String getAddress() {
-        return address;
+    public String getPersonalName() {
+        return personalName;
     }
-    public void setAddress(String address) {
-        this.address = address;
+    public void setPersonalName(String personalName) {
+        this.personalName = personalName;
     }
 }

@@ -1,5 +1,6 @@
-package com.tacticals.publisherastra.book;
+package com.tacticals.publisherastra.repository;
 
+import com.tacticals.publisherastra.model.Book;
 import org.springframework.data.cassandra.repository.CassandraRepository;
 import org.springframework.stereotype.Repository;
 
