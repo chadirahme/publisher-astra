@@ -37,14 +37,14 @@ public class BookController {
 
     @GetMapping("/allBooks")
     public String getBooks() {
-       //List<Book> list= bookRepository.findAll();
-       // return "books > " + list.size();
-        Author author=new Author();
-        author.setId("1");
-        author.setName("author1");
-        //author.setAddress("address1");
-        authorRepository.save(author);
-        return "books > "+authorRepository.findAll().size();
+//       //List<Book> list= bookRepository.findAll();
+//       // return "books > " + list.size();
+//        Author author=new Author();
+//        author.setId("1");
+//        author.setName("author1");
+//        //author.setAddress("address1");
+//        authorRepository.save(author);
+          return "books > "+ bookRepository.findAll().size() + " authors > "+ authorRepository.findAll().size();
     }
 
     @PostMapping("/loadData")
